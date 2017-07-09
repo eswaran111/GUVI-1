@@ -1,0 +1,259 @@
+
+-----------------------------------------------------------------------------------------------------------------
+Q1)
+
+          import java.util.Scanner;
+
+    public class Postive_Negative 
+
+    {
+
+        public static void main(String[] args) 
+
+        {
+
+            int n;
+
+            Scanner s = new Scanner(System.in);
+
+            System.out.print("Enter the number you want to check:");
+
+            n = s.nextInt();
+
+            if(n > 0)
+
+            {
+
+                System.out.println("The given number "+n+" is Positive");
+
+            }
+
+            else if(n < 0)
+
+            {
+
+                System.out.println("The given number "+n+" is Negative");
+
+            }
+
+            else
+
+            {
+
+                System.out.println("The given number "+n+" is neither Positive nor Negative ");
+
+            }
+
+        }
+
+    }
+
+
+
+------------------------------------------------------------------------------------------------------------------
+
+
+
+Q2)
+     
+
+import java.util.Scanner;
+ 
+class OddOrEven
+{
+   public static void main(String args[])
+   {
+      int x;
+      System.out.println("Enter an integer to check if it is odd or even ");
+      Scanner in = new Scanner(System.in);
+      x = in.nextInt();
+ 
+      if ( x % 2 == 0 )
+         System.out.println("You entered an even number.");
+      else
+         System.out.println("You entered an odd number.");
+   }
+}
+
+---------------------------------------------------------------------------------------------------------------------
+Q3)
+     /* Java Program Example - Check for Vowel */
+		
+import java.util.Scanner;
+
+public class JavaProgram
+{
+    public static void main(String args[])
+    {
+        char ch;
+        Scanner scan = new Scanner(System.in);
+		
+        System.out.print("Enter an Alphabet : ");
+        ch = scan.next().charAt(0);
+		
+        if(ch=='a' || ch=='A' || ch=='e' || ch=='E' ||
+        ch=='i' || ch=='I' || ch=='o' || ch=='O' ||
+        ch=='u' || ch=='U')
+        {
+            System.out.print("This is a Vowel");
+        }
+        else
+        {
+            System.out.print("This is not a Vowel");
+        }
+    }
+}
+------------------------------------------------------------------------------------------------------------------------  
+Q4)
+ 
+   public static void main(String[] args) {
+        // Create a String of character having letters 
+  // in between just for a test
+ String characters = "q1w2E3r4T5y 9$0%a-s^d";
+ 
+ // we take the length of characters by length()
+ int length = characters.length();
+ 
+ // we than loop each character one by one 
+ for(int i = 0; i < length; i++) {
+           // we store each character in a variable
+    // for each loop
+    char character = characters.charAt(i);
+         
+    // checking for each character that its a letter or not
+    // by calling Character class isLetter() method , by passing
+    // the character. It returns true if the character passed is
+    // letter or an alphabet
+    if(Character.isLetter(character)) {
+  System.out.println("Given character : " + characters.charAt(i) + " is a letter");
+    }
+    else {
+  System.out.println("Given character : " + characters.charAt(i) + " is not a letter");
+    }
+ }
+   }
+ 
+ 
+}  
+-----------------------------------------------------------------------------------------------------------------------
+Q5)
+      public static void main(String args[])
+   {
+      int x, y, z;
+      System.out.println("Enter three integers ");
+      Scanner in = new Scanner(System.in);
+ 
+      x = in.nextInt();
+      y = in.nextInt();
+      z = in.nextInt();
+ 
+      if ( x > y && x > z )
+         System.out.println("First number is largest.");
+      else if ( y > x && y > z )
+         System.out.println("Second number is largest.");
+      else if ( z > x && z > y )
+         System.out.println("Third number is largest.");
+      else   
+         System.out.println("Entered numbers are not distinct.");
+   }
+---------------------------------------------------------------------------------------------------------------------
+
+Q6)
+    public static void main(String args[])
+    {
+       int yr;
+       Scanner scan = new Scanner(System.in);
+	   
+       System.out.print("Enter Year : ");
+       yr = scan.nextInt();
+	   
+       if((yr%4 == 0) && (yr%100!=0))
+       {
+           System.out.print("This is a Leap Year");
+       }
+       else if(yr%100 == 0)
+       {
+           System.out.print("This is not a Leap Year");
+       }
+       else if(yr%400 == 0)
+       {
+           System.out.print("This is a Leap Year");
+       }
+       else
+       {
+           System.out.print("This is not a Leap Year");
+       }
+    }
+-----------------------------------------------------------------------------------------------------------------------
+
+Q7)
+           /* package whatever; // don't place package name! */
+     
+    import java.util.*;
+    import java.lang.*;
+    import java.io.*;
+     
+    /* Name of the class has to be "Main" only if the class is public. */
+    class Ideone
+    {
+    	public static void main (String[] args) throws java.lang.Exception
+    	{
+    		// your code goes here
+    		for (int i=1;i<=5;i++)
+    		{
+    			System.out.println("hello");
+     
+    		}
+    	}
+    }
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Q8)
+    /* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		int i;
+		Scanner a=new Scanner(System.in);
+		i=a.nextInt();
+		int sum=i*((i+1)/2);
+		System.out.print("sum is ="+ sum);
+		
+	}
+}
+---------------------------------------------------------------------------------------------------------------------
+Q9)
+   public static void main(String[] args) throws Exception {
+        int i = 1;
+        while (i < 101) {
+           System.out.print(i);
+           i = i + 1;
+        }
+    }
+-----------------------------------------------------------------------------------------------------------------------
+Q10)
+    public static void main(String args[])
+    {   
+        int n, i=0;
+        System.out.print("Enter a Number:");
+        Scanner get = new Scanner(System.in);
+        n = get.nextInt();
+        while(n>0)
+        {
+            n=n/10;
+            i++;
+        }
+        System.out.println();
+        System.out.println("Number of Digits present : "+i);
+    }
+    
